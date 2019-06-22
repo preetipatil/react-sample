@@ -15,7 +15,7 @@ class Home extends React.Component{
   render () {
     return(
       <div>
-        <form className="welcomeUser" onSubmit={this.getUserName}>
+        <form className="homeForm" onSubmit={this.getUserName}>
           <h2>Please Enter Your Name</h2>
           <input type="text"
                  ref={this.userName}

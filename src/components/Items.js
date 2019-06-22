@@ -5,7 +5,7 @@ class Items extends React.Component{
     return(
       <div className="itemsList">
         <div>
-          <span>Your Order</span>
+          <span>Your ITEMS</span>
         </div>
       </div>
     ) ;
