@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header'
 import Order from './Order'
 import Inventory from './Inventry'
-import Items from './Items';
+import Item from './Item';
 import sampleProducts from '../sampleProducts';
 
 class App extends React.Component{
@@ -27,8 +27,20 @@ class App extends React.Component{
   render () {
     return(
       <div className="container">
-        <Header  tagline="Best111111 deal of the day!!"/>
-        <Items />
+        <Header  tagline="Best deal of the day!!"/>
+          <div className="itemsList">
+              <span>Your Products</span>
+              <ul>
+                {Object.keys(this.state.products).map(key =>
+                  (
+                  <Item
+                    key ={key}
+                    details={this.state.products[key]}
+                  />
+                  ))}
+                
+              </ul>
+          </div>
         <div className="container2">
           <Order />
           <Inventory addProduct={this.addProduct} loadProducts={this.loadProducts}/>
