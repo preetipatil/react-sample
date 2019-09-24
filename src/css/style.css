@@ -1,0 +1,57 @@
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 0 0 20px;
+    /* top right bottom left */
+    padding: 0;
+    background-color: #fff;
+}
+
+.shopHeader {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    float: left;
+    border-bottom: #c00 solid 3px;
+}
+
+.itemsList {
+    width: 500px;
+    float: left;
+    border-right: double;
+}
+
+.container2 {
+    width: 900px;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.myshopOrder {
+    width: 300px;
+    float: left;
+    border-right: double;
+}
+
+.inventory {
+    width: 300px;
+    float: right;
+    
+}
+
+#container #footer {
+    float: left;
+    width: 870px;
+    border-top: #c00 solid 3px;
+}
+
+
